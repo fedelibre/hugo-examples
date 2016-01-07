@@ -1,0 +1,4 @@
+name = "pesto"
+ingredients = ["basil", "pine nuts", "parmesan", "olive oil"]
+level = "basic"
+time = "20 minutes"

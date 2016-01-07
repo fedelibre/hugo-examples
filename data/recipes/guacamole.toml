@@ -1,0 +1,4 @@
+name = "guacamole"
+ingredients = ["avocado", "lemon", "onion", "olive oil"]
+level = "basic"
+time = "10 minutes"

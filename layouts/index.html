@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<main>
+
+{{ range .Site.Data.recipes }}
+  {{ partial "recipes.html" . }}
+{{ end }}
+
+</main>
+
+{{ partial "footer.html" . }}
