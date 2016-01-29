@@ -1,0 +1,16 @@
+{{ range where .Site.Pages "Section" "recipe" }}
+{{ $url := .Title | printf "/images/%s" }}
+{{ $folder := .Title | printf "/static/images/%s" }}
+{{ $files := readDir $folder }}
+
+<div>
+  {{ range $files }}
+  <figure>
+    <a href="{{$url}}/{{.Name | urlize }}">
+      <img src="{{$url}}/{{.Name | urlize }}">
+    </a>
+  </figure>
+  {{ end }}
+</div>
+
+{{ end }}
