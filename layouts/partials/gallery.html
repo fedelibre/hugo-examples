@@ -1,6 +1,6 @@
 {{ range where .Site.Pages "Section" "recipe" }}
-{{ $url := .Title | printf "/images/%s" }}
-{{ $folder := .Title | printf "/static/images/%s" }}
+{{ $url := (printf "/images/%s" .Title) }}
+{{ $folder := (printf "/static/images/%s" .Title) }}
 {{ $files := readDir $folder }}
 
 <div>
